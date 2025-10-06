@@ -6,6 +6,14 @@ It supports preloading, changing, slideshow mode, toggle functionality, and logs
 
 ---
 
+Demo:
+
+![Demo](assets/next,prev.gif)
+
+![Demo](assets/slideshow.gif)
+
+---
+
 ## Features
 
 - Preload wallpapers from directories or individual files
@@ -53,6 +61,16 @@ WALLS_SLIDESHOW_TIME=60
 | `slideshow, s` | Start/stop/toggle slideshow |
 | `log`          | Show or clear log |
 | `help`         | Show help |
+
+### Example Keybinds in `hyprland.conf`
+
+Add the following to your `~/.config/hypr/hyprland.conf` to bind wallpaper actions:
+
+```conf
+bind = $mainMod SHIFT, W, exec, $wallscript c prev
+bind = $mainMod, W, exec, $wallscript c next
+bind = $mainMod ALT, W, exec, $wallscript s
+```
 
 ---
 
